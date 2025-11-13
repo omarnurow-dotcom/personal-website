@@ -10,7 +10,15 @@ header {
   background: #333;
   color: white;
   padding: 20px;
+}header {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px;
 }
+
+
 
 nav a {
   color: white;
