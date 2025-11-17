@@ -1,0 +1,32 @@
+name: CI - Smoke tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  smoke-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Start simple HTTP server
+        run: |
+          # serve the repository root on port 8000 in background
+          python3 -m http.server 8000 &
+          # give the server a moment to start
+          sleep 2
+
+      - name: Make tests executable
+        run: chmod +x ./tests/run_tests.sh
+
+      - name: Run smoke tests
+        run: ./tests/run_tests.sh http://127.0.0.1:8000
