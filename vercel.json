@@ -2,9 +2,12 @@
   "version": 2,
   "name": "personal-website",
   "builds": [
-    { "src": "index.html", "use": "@vercel/static" }
+    { "src": "*.{html,js,css}", "use": "@vercel/static" }
   ],
   "routes": [
+    { "src": "/(.*\\.js)", "headers": { "Cache-Control": "public, max-age=0" } },
+    { "src": "/(.*\\.css)", "headers": { "Cache-Control": "public, max-age=31536000" } },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
+
