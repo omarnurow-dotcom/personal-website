@@ -3,48 +3,592 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Omar | Software Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Omar.</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">Omar</h1>
+                <h2 class="hero-subtitle">Software Developer</h2>
+                <p class="hero-description">Passionate about building innovative solutions and learning new technologies. Let's create something amazing together.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="WhatsApp Image 2026-01-05 at 11.33.14 AM.jpeg" alt="Omar's Photo">
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="WhatsApp Image 2026-01-05 at 11.33.14 AM.jpeg" alt="Omar's Photo">
+                </div>
+                <div class="about-text">
+                    <h3>Software Developer & Problem Solver</h3>
+                    <p>I'm a passionate software developer with a strong foundation in web development. I love tackling complex problems and turning ideas into reality through code.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or learning about the latest trends in software development.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/4a90a4/ffffff?text=E-Commerce" alt="E-Commerce Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce with payment integration, user authentication, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="action-btn" onclick="toggleCode('code1')"><i class="fas fa-code"></i> View Code</button>
+                        </div>
+                    </div>
+                    <div class="code-viewer" id="code1" style="display: none;">
+                        <div class="code-tabs">
+                            <button class="code-tab active" onclick="showCodeTab('frontend1', this)">Frontend</button>
+                            <button class="code-tab" onclick="showCodeTab('backend1', this)">Backend</button>
+                        </div>
+                        <div class="code-block active" id="frontend1">
+                            <pre><code class="language-javascript">import React, { useState, useEffect } from 'react';
+import './App.css';
+
+function App() {
+  const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState([]);
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+
+  const fetchProducts = async () => {
+    try {
+      const response = await fetch('/api/products');
+      const data = await response.json();
+      setProducts(data);
+    } catch (error) {
+      console.error('Error fetching products:', error);
+    }
+  };
+
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+    alert(`${product.name} added to cart!`);
+  };
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>E-Commerce Store</h1>
+        <span className="cart-count">Cart: {cart.length} items</span>
+      </header>
+      
+      <main>
+        <section className="products">
+          <h2>Featured Products</h2>
+          <div className="product-grid">
+            {products.map(product => (
+              <div key={product.id} className="product-card">
+                <img src={product.image} alt={product.name} />
+                <h3>{product.name}</h3>
+                <p>${product.price}</p>
+                <button onClick={() => addToCart(product)}>
+                  Add to Cart
+                </button>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
+
+export default App;</code></pre>
+                        </div>
+                        <div class="code-block" id="backend1">
+                            <pre><code class="language-javascript">const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+require('dotenv').config();
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+// Middleware
+app.use(cors());
+app.use(express.json());
+
+// MongoDB Connection
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log('MongoDB connected'))
+.catch(err => console.error(err));
+
+// Product Schema
+const productSchema = new mongoose.Schema({
+  name: String,
+  price: Number,
+  description: String,
+  image: String,
+  category: String
+});
+
+const Product = mongoose.model('Product', productSchema);
+
+// Routes
+app.get('/api/products', async (req, res) => {
+  try {
+    const products = await Product.find();
+    res.json(products);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.post('/api/products', async (req, res) => {
+  try {
+    const newProduct = new Product(req.body);
+    await newProduct.save();
+    res.status(201).json(newProduct);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/6c5ce7/ffffff?text=Task+Manager" alt="Task Management App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A collaborative task management tool with real-time updates, drag-and-drop functionality, and team features.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="action-btn" onclick="toggleCode('code2')"><i class="fas fa-code"></i> View Code</button>
+                        </div>
+                    </div>
+                    <div class="code-viewer" id="code2" style="display: none;">
+                        <div class="code-tabs">
+                            <button class="code-tab active" onclick="showCodeTab('vue2', this)">Vue.js</button>
+                            <button class="code-tab" onclick="showCodeTab('firebase2', this)">Firebase</button>
+                        </div>
+                        <div class="code-block active" id="vue2">
+                            <pre><code class="language-javascript"><template>
+  <div id="app">
     <header>
-        <h1>Hello, I'm Omar</h1>
-        <p>Welcome to my personal website!</p>
+      <h1>Task Manager</h1>
+      <button @click="showAddTask = true">+ New Task</button>
     </header>
+    
+    <main>
+      <div class="columns">
+        <div 
+          v-for="column in columns" 
+          :key="column.id" 
+          class="column"
+          @dragover.prevent
+          @drop="onDrop($event, column.id)"
+        >
+          <h3>{{ column.title }}</h3>
+          <div 
+            v-for="task in column.tasks" 
+            :key="task.id" 
+            class="task-card"
+            draggable="true"
+            @dragstart="onDragStart($event, task)"
+          >
+            <h4>{{ task.title }}</h4>
+            <p>{{ task.description }}</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</template>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a software developer learning web development.</p>
+<script>
+import { ref } from 'vue';
+
+export default {
+  name: 'App',
+  setup() {
+    const showAddTask = ref(false);
+    const columns = ref([
+      { id: 'todo', title: 'To Do', tasks: [] },
+      { id: 'in-progress', title: 'In Progress', tasks: [] },
+      { id: 'done', title: 'Done', tasks: [] }
+    ]);
+    
+    return { showAddTask, columns };
+  }
+};
+</script></code></pre>
+                        </div>
+                        <div class="code-block" id="firebase2">
+                            <pre><code class="language-javascript">import { initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
+import { getAuth } from 'firebase/auth';
+
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "your-project.firebaseapp.com",
+  projectId: "your-project",
+  storageBucket: "your-project.appspot.com",
+  messagingSenderId: "123456789",
+  appId: "1:123456789:web:abcdef"
+};
+
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
+export const auth = getAuth(app);
+
+export default app;</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/00b894/ffffff?text=Weather+Dashboard" alt="Weather Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="action-btn" onclick="toggleCode('code3')"><i class="fas fa-code"></i> View Code</button>
+                        </div>
+                    </div>
+                    <div class="code-viewer" id="code3" style="display: none;">
+                        <div class="code-tabs">
+                            <button class="code-tab active" onclick="showCodeTab('main3', this)">Main JS</button>
+                            <button class="code-tab" onclick="showCodeTab('api3', this)">API</button>
+                        </div>
+                        <div class="code-block active" id="main3">
+                            <pre><code class="language-javascript">// Weather Dashboard Application
+class WeatherDashboard {
+  constructor() {
+    this.apiKey = 'YOUR_API_KEY';
+    this.baseUrl = 'https://api.openweathermap.org/data/2.5';
+    this.cache = new Map();
+    
+    this.searchInput = document.getElementById('search');
+    this.cityName = document.getElementById('city-name');
+    this.tempDisplay = document.getElementById('temperature');
+    
+    this.init();
+  }
+  
+  async init() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        position => this.getWeatherByCoords(position.coords),
+        () => this.setDefaultCity()
+      );
+    }
+    
+    this.searchInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') this.searchCity();
+    });
+  }
+  
+  async searchCity() {
+    const city = this.searchInput.value.trim();
+    if (!city) return;
+    
+    try {
+      const data = await this.fetchWeatherData(city);
+      this.updateDisplay(data);
+    } catch (error) {
+      this.showError('City not found');
+    }
+  }
+  
+  async fetchWeatherData(city) {
+    const response = await fetch(
+      `${this.baseUrl}/weather?q=${city}&units=metric&appid=${this.apiKey}`
+    );
+    
+    if (!response.ok) {
+      throw new Error('City not found');
+    }
+    
+    return response.json();
+  }
+  
+  updateDisplay(data) {
+    const { name, main, sys } = data;
+    this.cityName.textContent = `${name}, ${sys.country}`;
+    this.tempDisplay.textContent = `${Math.round(main.temp)}°C`;
+  }
+  
+  showError(message) {
+    alert(message);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  new WeatherDashboard();
+});</code></pre>
+                        </div>
+                        <div class="code-block" id="api3">
+                            <pre><code class="language-javascript">// Weather API Service Module
+
+const API_CONFIG = {
+  baseUrl: 'https://api.openweathermap.org/data/2.5',
+  oneCallUrl: 'https://api.openweathermap.org/data/3.0/onecall',
+  iconsUrl: 'https://openweathermap.org/img/wn'
+};
+
+class WeatherAPI {
+  constructor(apiKey) {
+    this.apiKey = apiKey;
+  }
+  
+  async getCurrentWeather(city) {
+    const response = await fetch(
+      `${API_CONFIG.baseUrl}/weather?q=${city}&units=metric&appid=${this.apiKey}`
+    );
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
+    return response.json();
+  }
+  
+  async getForecast(city) {
+    const response = await fetch(
+      `${API_CONFIG.baseUrl}/forecast?q=${city}&units=metric&appid=${this.apiKey}`
+    );
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
+    return response.json();
+  }
+  
+  getIconUrl(iconCode) {
+    return `${API_CONFIG.iconsUrl}/${iconCode}@2x.png`;
+  }
+}
+
+export default WeatherAPI;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:Omaredin740@gmail.com">Omaredin740@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:0799009037">079 900 9037</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Nairobi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/yourusername" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/yourusername" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <img src="photo.png" alt="My photo" width="300">
-
-        <ul>
-            <li>Project 1 – Description</li>
-            <li>Project 2 – Description</li>
-        </ul>
-    </section>
-
-    <footer><section id="contact">
-    <h2>Contact Me</h2>
-    
-    <p>Email: <a href="Omaredin740@gmail.com">omaredin.com</a></p>
-    <p>Phone: <a href="tel:0799009037">0799009037</a></p>
-    
-    <p>Follow me on:</p>
-    <ul>
-        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
-        <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
-    </ul>
-</section>
-
-
-        <p>© 2025 Omar.welcome to cumeer website.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Omar.</a>
+                    <p>Building digital experiences that make a difference.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Omar. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
+
